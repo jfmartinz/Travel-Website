@@ -1,1 +1,118 @@
-ECHO is on.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+}
+.header h2 {
+    opacity: .3;
+    font-size: 2em;
+}
+ul{
+    list-style: none;
+}
+ul li{
+display: inline-block;
+}
+ul li a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 2em;
+    letter-spacing: 1px;
+}
+.hero-content{
+    text-align: center;
+}
+.hero-content span{
+    font-weight: bold;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-top: 2em;
+    color: #fff;
+    font-weight: 300;
+}
+.hero-content p{
+    margin-top: 1.5em;
+    color: #fff;
+   line-height: 1.7;
+}
+.hero-content a{
+    border-bottom: 2px solid #fff;
+    font-style: italic;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* card content */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 2.5em 3% 2.5em;
+}
+.card{
+    background-color: #fff;
+    text-align: center;
+}
+
+.card-container{
+    padding: 2em;
+    height: 100%;
+}
+
+.card-content{
+    margin: 2em auto 0;
+    max-width: 350px;
+}
+
+.card-content h3{
+    color: #d9383f;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.card-content p {
+ line-height: 1.5;
+ margin: 1.5em 0;
+}
+.card-content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #d9383f;
+}
+
+.grid .img-container{
+   width: 100px;
+   margin: 0 auto;
+}
+
+
+.grid img{
+    width: 100%;
+    height:100px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #d9383f;
+  
+}
